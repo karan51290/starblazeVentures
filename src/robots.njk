@@ -1,0 +1,10 @@
+---
+permalink: robots.txt
+eleventyExcludeFromCollections: true
+---
+User-agent: *
+{%- if not business.featureFlags.portfolioEnabled %}
+Disallow: /portfolio/
+{%- endif %}
+
+Sitemap: {{ "sitemap.xml" | absoluteUrl(business.site.url) }}

@@ -1,0 +1,9 @@
+{% macro imagePlaceholder(alt, ratio="4/3", src="") %}
+{% if src %}
+<img class="media" src="{{ src }}" alt="{{ alt }}" loading="lazy" style="aspect-ratio: {{ ratio }};">
+{% else %}
+<div class="image-placeholder" style="aspect-ratio: {{ ratio }};" role="img" aria-label="{{ alt }}">
+  <span class="image-placeholder__label">{{ alt }}</span>
+</div>
+{% endif %}
+{% endmacro %}

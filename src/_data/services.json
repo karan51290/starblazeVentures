@@ -1,0 +1,101 @@
+[
+  {
+    "order": 1,
+    "slug": "website-designing",
+    "title": "Website Designing",
+    "summary": "Fast, modern, mobile-first websites that actually convert visitors into customers.",
+    "seoTitle": "Website Designing Services | StarBlaze Ventures",
+    "seoDescription": "Custom, mobile-first website design built to convert visitors into customers.",
+    "imageAlt": "Before and after comparison of an outdated business website versus a modern StarBlaze-designed website",
+    "image": "https://loremflickr.com/800/600/website,laptop?lock=201",
+    "body": "Your website is often the first impression a customer has of your business — StarBlaze designs websites that load fast, look professional on any device, and are built to turn visitors into enquiries or sales, not just look pretty.\n\n**What's included:**\n\n- Custom design tailored to your brand — not a generic template\n- Mobile-first, fast-loading pages\n- Clear calls-to-action built around your actual business goals\n- Basic on-page SEO from day one\n\n**Who it's for:** Businesses that don't have a website yet, or have one that's outdated, slow, or doesn't reflect the business anymore."
+  },
+  {
+    "order": 2,
+    "slug": "fully-managed-website-hosting",
+    "title": "Fully Managed Website Hosting",
+    "summary": "We keep your site online, secure, and fast — so you never have to think about servers.",
+    "seoTitle": "Fully Managed Website Hosting | StarBlaze Ventures",
+    "seoDescription": "Managed website hosting with backups, security monitoring, and direct support.",
+    "imageAlt": "Server uptime dashboard showing green status indicators",
+    "image": "https://loremflickr.com/800/600/server,room?lock=202",
+    "body": "Website hosting shouldn't be something you have to learn. We handle server setup, security updates, backups, uptime monitoring, and renewals — if anything goes wrong, we're the ones who get the alert, not you.\n\n**What's included:**\n\n- Server setup and configuration\n- Regular backups\n- Security monitoring and updates\n- Uptime monitoring\n- Direct support when something needs fixing\n\n**Who it's for:** Any business that wants their website to just work, without managing a hosting account, renewals, or technical issues themselves."
+  },
+  {
+    "order": 3,
+    "slug": "managed-cloud-services",
+    "title": "Managed Cloud Services",
+    "summary": "Cloud infrastructure, set up and maintained for you, sized to what your business actually needs.",
+    "seoTitle": "Managed Cloud Services | StarBlaze Ventures",
+    "seoDescription": "Right-sized cloud infrastructure setup, monitoring, and maintenance.",
+    "imageAlt": "Cloud infrastructure diagram showing connected services",
+    "image": "https://loremflickr.com/800/600/cloud,computing?lock=203",
+    "body": "Whether it's email, file storage, business applications, or backend infrastructure for your own product, we set up and manage cloud services sized to your business — not an enterprise package you'll never fully use, and not a bare-bones setup that breaks under real usage.\n\n**What's included:**\n\n- Cloud environment setup and configuration\n- Ongoing monitoring and maintenance\n- Scaling guidance as your business grows\n- Cost optimization — right-sized, not over-provisioned\n\n**Who it's for:** Businesses running internal tools, apps, or infrastructure that needs a managed cloud setup instead of ad-hoc, unmanaged servers."
+  },
+  {
+    "order": 4,
+    "slug": "gmb-services",
+    "title": "GMB Services",
+    "summary": "Get found on Google Maps and Search, with a Business Profile that's fully optimized and kept up to date.",
+    "seoTitle": "Google Business Profile (GMB) Services | StarBlaze Ventures",
+    "seoDescription": "Google Business Profile setup, optimization, and ongoing management.",
+    "imageAlt": "Google Business Profile listing showing reviews, photos, and business hours",
+    "image": "https://loremflickr.com/800/600/storefront,map?lock=204",
+    "body": "Most local customers check Google before they check anything else. We set up and optimize your Google Business Profile — accurate hours, photos, categories, posts, and review management — so you show up, and show up well, when someone nearby searches for what you offer.\n\n**What's included:**\n\n- Google Business Profile setup or clean-up\n- Ongoing posts and updates\n- Review monitoring and response support\n- Local SEO improvements tied to your GMB listing\n\n**Who it's for:** Any business with a physical location or local service area that wants to show up in \"near me\" searches and Google Maps."
+  },
+  {
+    "order": 5,
+    "slug": "ai-automation",
+    "title": "AI & Automation",
+    "summary": "Automate the repetitive parts of your business with AI tools built around how you actually work.",
+    "seoTitle": "AI & Automation Services | StarBlaze Ventures",
+    "seoDescription": "Custom AI automation for customer queries, lead handling, and internal workflows.",
+    "imageAlt": "Automated workflow diagram showing AI handling customer queries and routing leads",
+    "image": "https://loremflickr.com/800/600/robot,ai?lock=205",
+    "body": "From answering common customer questions to organizing leads to generating first drafts of content, we build AI-powered automations around your actual workflows — not generic chatbots, but tools shaped around how your business really operates.\n\n**What's included:**\n\n- Workflow audit to find what's worth automating\n- Custom AI automation setup (chat, lead handling, content, internal tools)\n- Integration with tools you already use\n- Ongoing tuning as your needs change\n\n**Who it's for:** Businesses spending too much time on repetitive tasks — answering the same questions, manually sorting leads, or copy-pasting information between tools."
+  },
+  {
+    "order": 6,
+    "slug": "whatsapp-marketing-automation",
+    "title": "WhatsApp Marketing & Automation",
+    "summary": "Reach customers where they already are, with automated flows that feel personal.",
+    "seoTitle": "WhatsApp Marketing & Automation | StarBlaze Ventures",
+    "seoDescription": "WhatsApp Business API setup, automated flows, and broadcast campaign management.",
+    "imageAlt": "WhatsApp Business chat showing an automated order confirmation flow",
+    "image": "https://loremflickr.com/800/600/smartphone,chat?lock=206",
+    "body": "WhatsApp is where your customers already are. We build automated flows for order updates, broadcast campaigns, catalog sharing, and customer support — set up properly so it feels responsive and personal, not like a mass-blast spam channel.\n\n**What's included:**\n\n- WhatsApp Business API setup\n- Automated flows (order updates, FAQs, catalog sharing)\n- Broadcast campaign setup and management\n- Integration with your existing sales/support process\n\n**Who it's for:** Businesses that want to sell, support, and follow up with customers directly over WhatsApp without doing it all manually."
+  },
+  {
+    "order": 7,
+    "slug": "performance-marketing",
+    "title": "Performance Marketing",
+    "summary": "Paid campaigns built around measurable return, not vanity metrics.",
+    "seoTitle": "Performance Marketing Services | StarBlaze Ventures",
+    "seoDescription": "Paid campaign strategy, setup, and optimization across Google, Meta, and more.",
+    "imageAlt": "Marketing analytics dashboard showing ad spend and conversion metrics",
+    "image": "https://loremflickr.com/800/600/analytics,marketing?lock=207",
+    "body": "We run paid campaigns across the platforms that matter for your business — built, tracked, and optimized around actual return on ad spend, not follower counts or impressions that don't turn into revenue.\n\n**What's included:**\n\n- Campaign strategy and setup (Google, Meta, and other relevant platforms)\n- Conversion tracking so you know what's actually working\n- Ongoing optimization based on real performance data\n- Regular, plain-language reporting\n\n**Who it's for:** Businesses ready to spend on advertising but want it managed properly, with clear accountability for the results."
+  },
+  {
+    "order": 8,
+    "slug": "social-media-management",
+    "title": "Social Media Management",
+    "summary": "Consistent, on-brand presence across your social channels, without you lifting a finger.",
+    "seoTitle": "Social Media Management | StarBlaze Ventures",
+    "seoDescription": "Content planning, creation, scheduling, and community management for social media.",
+    "imageAlt": "Social media content calendar showing scheduled posts across platforms",
+    "image": "https://loremflickr.com/800/600/socialmedia,phone?lock=208",
+    "body": "Posting consistently, staying on-brand, and actually engaging with followers takes real time — time most business owners don't have. We plan, create, and post content across your social channels so your presence stays active and consistent.\n\n**What's included:**\n\n- Content calendar and planning\n- Post creation and scheduling\n- Basic community management (comments, DMs where relevant)\n- Monthly performance review\n\n**Who it's for:** Businesses that know they need to be active on social media but don't have the time or team to do it consistently."
+  },
+  {
+    "order": 9,
+    "slug": "custom-business-software",
+    "title": "Custom Business Software, Apps & Solutions",
+    "summary": "When off-the-shelf tools stop being enough, we build exactly what your business needs.",
+    "seoTitle": "Custom Business Software & App Development | StarBlaze Ventures",
+    "seoDescription": "Custom software, apps, and solutions built around your specific business workflows.",
+    "imageAlt": "Custom business software dashboard showing a client-specific workflow tool",
+    "image": "https://loremflickr.com/800/600/coding,software?lock=209",
+    "body": "Sometimes generic tools stop fitting — a specific workflow, an internal tool, a customer-facing app that doesn't exist yet. We design and build custom software and applications built specifically around how your business actually operates.\n\n**What's included:**\n\n- Requirements discovery and scoping\n- Custom app/software design and development\n- Integration with your existing tools and data\n- Ongoing support and iteration post-launch\n\n**Who it's for:** Businesses that have outgrown off-the-shelf tools, or have a specific operational problem no existing product solves well."
+  }
+]

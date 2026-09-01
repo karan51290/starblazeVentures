@@ -1,0 +1,40 @@
+---
+permalink: assets/css/tokens.css
+eleventyExcludeFromCollections: true
+---
+:root {
+  --color-primary: {{ business.theme.colors.primary }};
+  --color-primary-active: {{ business.theme.colors.primaryActive }};
+  --color-accent: {{ business.theme.colors.accent }};
+  --color-ink: {{ business.theme.colors.ink }};
+  --color-body: {{ business.theme.colors.body }};
+  --color-muted: {{ business.theme.colors.muted }};
+  --color-hairline: {{ business.theme.colors.hairline }};
+  --color-canvas: {{ business.theme.colors.canvas }};
+  --color-surface-soft: {{ business.theme.colors.surfaceSoft }};
+  --color-surface-strong: {{ business.theme.colors.surfaceStrong }};
+  --color-on-primary: {{ business.theme.colors.onPrimary }};
+  --color-link: {{ business.theme.colors.link }};
+
+  --color-signature-dark: {{ business.theme.colors.signatureDark }};
+  --color-signature-warm: {{ business.theme.colors.signatureWarm }};
+  --color-signature-cream: {{ business.theme.colors.signatureCream }};
+  --color-on-signature-cream: {{ business.theme.colors.onSignatureCream }};
+
+  --radius-xs: {{ business.theme.radius.xs }};
+  --radius-sm: {{ business.theme.radius.sm }};
+  --radius-md: {{ business.theme.radius.md }};
+  --radius-lg: {{ business.theme.radius.lg }};
+  --radius-pill: {{ business.theme.radius.pill }};
+
+  --space-xs: {{ business.theme.spacing.xs }};
+  --space-sm: {{ business.theme.spacing.sm }};
+  --space-md: {{ business.theme.spacing.md }};
+  --space-lg: {{ business.theme.spacing.lg }};
+  --space-xl: {{ business.theme.spacing.xl }};
+  --space-xxl: {{ business.theme.spacing.xxl }};
+  --space-section: {{ business.theme.spacing.section }};
+
+  --font-display: {{ business.theme.fonts.display | safe }};
+  --font-body: {{ business.theme.fonts.body | safe }};
+}

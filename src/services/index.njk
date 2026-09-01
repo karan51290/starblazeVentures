@@ -1,0 +1,16 @@
+---
+layout: layouts/page.njk
+title: Services | StarBlaze Ventures
+description: Nine ways StarBlaze Ventures helps your business run better online.
+permalink: services/
+---
+{% from "macros/card.njk" import card %}
+
+<h1>Our Services</h1>
+<p>Nine ways we help your business run better online — pick one, or let us handle the whole stack.</p>
+
+<div class="card-grid">
+  {% for service in services %}
+    {{ card(service.title, service.summary, "/services/" + service.slug + "/", service.imageAlt, "Learn more", service.image) }}
+  {% endfor %}
+</div>

@@ -1,0 +1,26 @@
+[
+  {
+    "order": 1,
+    "slug": "example-project-one",
+    "title": "Example Project — Website Redesign",
+    "excerpt": "Placeholder example entry showing the data shape for a portfolio project. Replace with a real project once available.",
+    "serviceTags": ["website-designing", "gmb-services"],
+    "clientName": "",
+    "projectUrl": "",
+    "imageAlt": "Placeholder screenshot of an example client website redesign project",
+    "image": "https://loremflickr.com/800/600/website,design?lock=216",
+    "featured": false
+  },
+  {
+    "order": 2,
+    "slug": "example-project-two",
+    "title": "Example Project — WhatsApp Automation Rollout",
+    "excerpt": "Placeholder example entry showing the data shape for a portfolio project. Replace with a real project once available.",
+    "serviceTags": ["whatsapp-marketing-automation", "ai-automation"],
+    "clientName": "",
+    "projectUrl": "",
+    "imageAlt": "Placeholder screenshot of an example WhatsApp automation project",
+    "image": "https://loremflickr.com/800/600/smartphone,messaging?lock=217",
+    "featured": false
+  }
+]

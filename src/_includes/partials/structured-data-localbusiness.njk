@@ -1,0 +1,23 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": {{ business.brand.legalName | dump | safe }},
+  "url": {{ business.site.url | dump | safe }},
+  "telephone": {{ business.contact.phone | dump | safe }},
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ business.contact.address.line1 | dump | safe }},
+    "addressLocality": {{ business.contact.address.city | dump | safe }},
+    "addressRegion": {{ business.contact.address.state | dump | safe }},
+    "addressCountry": {{ business.contact.address.country | dump | safe }}
+  },
+  "hasMap": {{ business.contact.mapsUrl | dump | safe }},
+  "sameAs": [
+    {%- set socialLinks = business.social | objectValues -%}
+    {%- for link in socialLinks -%}
+      {{ link | dump | safe }}{% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  ]
+}
+</script>

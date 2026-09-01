@@ -1,0 +1,18 @@
+{%- set pageTitle = title or business.brand.name -%}
+{%- set pageDescription = description or business.brand.tagline -%}
+{%- set pageUrl = business.site.url | absoluteUrl(business.site.url) -%}
+<title>{{ pageTitle }}</title>
+<meta name="description" content="{{ pageDescription }}">
+<link rel="canonical" href="{{ page.url | absoluteUrl(business.site.url) }}">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ business.brand.name }}">
+<meta property="og:title" content="{{ pageTitle }}">
+<meta property="og:description" content="{{ pageDescription }}">
+<meta property="og:url" content="{{ page.url | absoluteUrl(business.site.url) }}">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ pageTitle }}">
+<meta name="twitter:description" content="{{ pageDescription }}">
+
+<meta name="theme-color" content="{{ business.site.themeColor }}">

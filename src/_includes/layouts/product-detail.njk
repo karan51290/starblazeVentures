@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+---
+{% from "macros/image-placeholder.njk" import imagePlaceholder %}
+{% from "macros/button.njk" import button %}
+<article class="page-container product-detail">
+  <h1>{{ product.title }}</h1>
+  <p class="product-detail__price">
+    {% if product.priceDisplayOverride %}{{ product.priceDisplayOverride }}{% elif product.price %}&#8377;{{ product.price }}{% endif %}
+  </p>
+  {{ imagePlaceholder(product.imageAlt, "4/3", product.image) }}
+  <div class="product-detail__body">
+    {{ product.description | markdownify | safe }}
+  </div>
+  {% if product.buyNowUrl %}
+    {{ button("Buy Now", product.buyNowUrl, "pill") }}
+  {% else %}
+    <p class="product-detail__unavailable">Buy link coming soon — <a href="/contact/">contact us</a> to purchase.</p>
+  {% endif %}
+</article>

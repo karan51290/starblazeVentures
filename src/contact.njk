@@ -1,0 +1,29 @@
+---
+layout: layouts/page.njk
+title: Contact | StarBlaze Ventures
+description: Get in touch with StarBlaze Ventures — C8/1, Gr. Floor, Sector 4, Eldeco Estate One, Panipat.
+---
+{% from "macros/image-placeholder.njk" import imagePlaceholder %}
+
+<div class="narrow">
+<h1>Let's Talk About Your Business</h1>
+<p>Tell us a bit about what you need — we'll get back to you with next steps, no generic sales pitch.</p>
+
+<h2>Contact Details</h2>
+<ul>
+  <li><strong>Address:</strong> {{ business.contact.address.line1 }}, {{ business.contact.address.city }}, {{ business.contact.address.state }}</li>
+  <li><strong>Phone:</strong> <a href="tel:{{ business.contact.phone }}">{{ business.contact.phoneDisplay }}</a></li>
+  {% if business.contact.email %}<li><strong>Email:</strong> <a href="mailto:{{ business.contact.email }}">{{ business.contact.email }}</a></li>{% endif %}
+  <li><strong>WhatsApp:</strong> <a href="{{ business.social.whatsapp }}">Message us on WhatsApp</a></li>
+</ul>
+
+{{ imagePlaceholder("StarBlaze Ventures office", "16/9", "https://loremflickr.com/1200/675/corporate,office?lock=219") }}
+
+<p><a href="{{ business.contact.mapsUrl }}">View our location on Google Maps</a></p>
+
+<h2>Send Us a Message</h2>
+<p>
+  <!-- Placeholder: a real contact form needs a form-handling backend (e.g. Formspree, Netlify Forms equivalent, or a simple serverless function) since this is a static site with no server. Confirm which one before wiring this up. -->
+  A contact form will go here once a form-handling service is chosen — in the meantime, please reach out by phone or WhatsApp above.
+</p>
+</div>

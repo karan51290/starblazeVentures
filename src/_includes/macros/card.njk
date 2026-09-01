@@ -1,0 +1,12 @@
+{% from "macros/image-placeholder.njk" import imagePlaceholder %}
+
+{% macro card(title, summary, href, imageAlt, ctaLabel="Learn more", imageSrc="") %}
+<a class="card" href="{{ href }}">
+  {{ imagePlaceholder(imageAlt, "4/3", imageSrc) }}
+  <div class="card__body">
+    <h3 class="card__title">{{ title }}</h3>
+    <p class="card__summary">{{ summary }}</p>
+    <span class="card__cta">{{ ctaLabel }} &rarr;</span>
+  </div>
+</a>
+{% endmacro %}

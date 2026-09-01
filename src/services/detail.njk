@@ -1,0 +1,11 @@
+---
+layout: layouts/service-detail.njk
+pagination:
+  data: services
+  size: 1
+  alias: service
+permalink: "services/{{ service.slug }}/"
+eleventyComputed:
+  title: "{{ service.seoTitle }}"
+  description: "{{ service.seoDescription }}"
+---

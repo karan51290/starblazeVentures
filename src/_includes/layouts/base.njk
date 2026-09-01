@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{ business.site.defaultLocale }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include "partials/meta.njk" %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="{{ business.theme.fonts.googleFontsUrl }}">
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  {% include "partials/structured-data-localbusiness.njk" %}
+</head>
+<body>
+  {% include "partials/header.njk" %}
+  <main>
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+</body>
+</html>

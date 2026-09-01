@@ -1,0 +1,27 @@
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__col">
+      <p class="site-footer__brand">{{ business.brand.name }}</p>
+      <p>{{ business.contact.address.line1 }}, {{ business.contact.address.city }}, {{ business.contact.address.state }}</p>
+      <p><a href="{{ business.contact.mapsUrl }}">View on Map</a></p>
+    </div>
+    <div class="site-footer__col">
+      <p><a href="tel:{{ business.contact.phone }}">{{ business.contact.phoneDisplay }}</a></p>
+      {% if business.contact.email %}<p><a href="mailto:{{ business.contact.email }}">{{ business.contact.email }}</a></p>{% endif %}
+      <p><a href="{{ business.social.whatsapp }}">WhatsApp Us</a></p>
+    </div>
+    <div class="site-footer__col">
+      <p><a href="/services/">Services</a></p>
+      <p><a href="/contact/">Contact</a></p>
+      {% if business.featureFlags.storeEnabled %}<p><a href="/store/">Store</a></p>{% endif %}
+    </div>
+    <div class="site-footer__col">
+      <p><a href="/legal/terms/">Terms &amp; Conditions</a></p>
+      <p><a href="/legal/privacy/">Privacy Policy</a></p>
+      <p><a href="/legal/returns-refunds/">Returns &amp; Refunds</a></p>
+    </div>
+  </div>
+  <div class="site-footer__legal">
+    <p>&copy; {{ currentYear }} {{ business.brand.legalName }}. All rights reserved.</p>
+  </div>
+</footer>

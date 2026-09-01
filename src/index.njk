@@ -1,0 +1,78 @@
+---
+layout: layouts/page.njk
+title: StarBlaze Ventures — Websites, Hosting, Cloud & Marketing, Fully Managed
+description: StarBlaze Ventures builds, hosts, and grows digital-first businesses — websites, cloud, automation, and marketing, fully managed.
+---
+{% from "macros/card.njk" import card %}
+{% from "macros/image-placeholder.njk" import imagePlaceholder %}
+{% from "macros/button.njk" import button %}
+
+<section class="hero">
+  <div class="hero__inner">
+    <span class="eyebrow">Fully Managed Digital Growth</span>
+    <h1>Your Business, Fully Online. Fully Managed.</h1>
+    <p class="lede">StarBlaze Ventures builds, hosts, and grows digital-first businesses — websites, cloud, automation, and marketing, handled end-to-end so you can run your business instead of running your tech stack.</p>
+    <div class="hero__ctas">
+      {{ button("Explore Our Services", "/services/", "primary") }}
+      {{ button("Talk to Us", "/contact/", "secondary") }}
+    </div>
+  </div>
+</section>
+
+<section class="services-stack">
+  <div class="services-stack__intro">
+    <h2>Everything your business needs online, in one place.</h2>
+    <p class="lede">From your first website to fully automated customer conversations — pick a service, or let us run the whole stack.</p>
+  </div>
+
+  {% set rows = services | batch(3) %}
+  {% for row in rows %}
+  <div class="services-stack__row" style="z-index: {{ loop.index }};">
+    <div class="card-grid">
+      {% for service in row %}
+        {{ card(service.title, service.summary, "/services/" + service.slug + "/", service.imageAlt, "Learn more", service.image) }}
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+<script src="/assets/js/scroll-stack.js" defer></script>
+
+<div class="band band--signature-wrap">
+  <div class="band__inner signature-card signature-card--dark">
+    <h2>One partner, not ten vendors.</h2>
+    <p>Most small businesses end up juggling a web designer, a hosting company, a marketing freelancer, and a random cousin who "knows computers." StarBlaze Ventures replaces all of that with one accountable team — for your website, your cloud, your marketing, and everything in between.</p>
+    {{ button("Learn About Us", "/about/", "secondary-on-dark") }}
+  </div>
+</div>
+
+<div class="band band--signature-wrap">
+  <div class="band__inner signature-card signature-card--cream">
+    <h2>What we believe</h2>
+    <div class="card-grid">
+      <div>
+        <h4>Fully managed means fully managed</h4>
+        <p>We don't hand you a login and walk away — we keep things running.</p>
+      </div>
+      <div>
+        <h4>Time saved, not time spent</h4>
+        <p>Every service we offer exists to give business owners their time back.</p>
+      </div>
+      <div>
+        <h4>Right-sized, not over-sold</h4>
+        <p>We recommend what your business needs now, not the most expensive package we have.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="band band--soft" style="text-align: center;">
+  <div class="band__inner hero__inner">
+    <h2>Ready to get your business online the right way?</h2>
+    <p class="lede" style="margin-left: auto; margin-right: auto;">Tell us what you're working with today, and we'll tell you exactly what it'll take to get you where you want to be.</p>
+    <div class="hero__ctas">
+      {{ button("Get in Touch", "/contact/", "primary") }}
+    </div>
+  </div>
+</section>

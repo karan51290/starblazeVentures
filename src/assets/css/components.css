@@ -1,0 +1,471 @@
+/* ============ Header ============ */
+.site-header {
+  border-bottom: 1px solid var(--color-hairline);
+  background: var(--color-canvas);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+}
+
+.site-header__brand {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--color-ink);
+}
+
+.site-header__brand:hover {
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.site-nav__links {
+  display: flex;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  color: var(--color-body);
+  font-size: 0.95rem;
+}
+
+.site-nav a:hover {
+  text-decoration: none;
+  color: var(--color-ink);
+}
+
+.site-nav a.is-active {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+@media (max-width: 760px) {
+  .site-header__inner {
+    height: auto;
+    flex-wrap: wrap;
+    padding: var(--space-sm) var(--space-md);
+    row-gap: var(--space-sm);
+  }
+
+  .site-nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .site-nav__links {
+    gap: var(--space-md);
+    row-gap: var(--space-xs);
+  }
+}
+
+/* ============ Footer ============ */
+.site-footer {
+  background: var(--color-surface-soft);
+  border-top: 1px solid var(--color-hairline);
+  margin-top: var(--space-section);
+}
+
+.site-footer__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-xxl) var(--space-xl) var(--space-lg);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+}
+
+.site-footer__inner p {
+  margin: 0 0 var(--space-xs);
+  font-size: 0.925rem;
+}
+
+.site-footer__inner a {
+  color: var(--color-body);
+}
+
+.site-footer__brand {
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--color-ink);
+  margin-bottom: var(--space-sm);
+}
+
+.site-footer__legal {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-md) var(--space-xl) var(--space-xl);
+  border-top: 1px solid var(--color-hairline);
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .site-footer__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ============ Buttons ============
+   Primary = ink/navy, radius-lg, scarce (one per viewport).
+   Secondary = outline pair.
+   Pill is reserved for the Store's commercial dialect — never used elsewhere. */
+.btn {
+  display: inline-block;
+  font-family: var(--font-body);
+  padding: 14px 24px;
+  border-radius: var(--radius-lg);
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.btn--primary:hover {
+  background: var(--color-primary-active);
+  text-decoration: none;
+}
+
+.btn--secondary {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  border-color: var(--color-hairline);
+}
+
+.btn--secondary:hover {
+  border-color: var(--color-ink);
+  text-decoration: none;
+}
+
+.btn--secondary-on-dark {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  border-color: var(--color-canvas);
+}
+
+.btn--pill {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  border-radius: var(--radius-pill);
+  padding: 12px 28px;
+}
+
+.btn--pill:hover {
+  background: var(--color-primary-active);
+  text-decoration: none;
+}
+
+.btn--nav {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
+
+/* ============ Image placeholder ============ */
+.image-placeholder {
+  background: var(--color-surface-soft);
+  border: 1px dashed var(--color-hairline);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.image-placeholder__label {
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  max-width: 80%;
+}
+
+.media {
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-lg);
+  background: var(--color-surface-soft);
+}
+
+.card .media {
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-md);
+}
+
+/* ============ Cards ============ */
+.card {
+  display: block;
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  color: var(--color-body);
+  background: var(--color-canvas);
+  border: 1px solid var(--color-hairline);
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.card:hover {
+  text-decoration: none;
+  border-color: var(--color-primary);
+  background: var(--color-surface-soft);
+}
+
+.card__title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: var(--space-xs);
+}
+
+.card__summary {
+  color: var(--color-body);
+  font-size: 0.95rem;
+  max-width: none;
+}
+
+.card__cta {
+  display: inline-block;
+  color: var(--color-primary);
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-top: var(--space-xs);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+@media (max-width: 900px) {
+  .card-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .card-grid { grid-template-columns: 1fr; }
+}
+
+/* ============ Signature cards ============
+   Full-bleed color-block surfaces — the system's brand voltage. Used sparingly:
+   never two in a row, never adjacent to a same-toned band. */
+.signature-card {
+  border-radius: var(--radius-lg);
+  padding: var(--space-xxl) var(--space-xl);
+}
+
+.signature-card h2, .signature-card h3 {
+  margin-bottom: var(--space-sm);
+}
+
+.signature-card p {
+  max-width: 560px;
+}
+
+.signature-card--dark {
+  background: var(--color-signature-dark);
+  color: var(--color-on-primary);
+}
+
+.signature-card--dark h2, .signature-card--dark h3, .signature-card--dark h4 {
+  color: var(--color-on-primary);
+}
+
+.signature-card--warm {
+  background: var(--color-signature-warm);
+  color: var(--color-on-primary);
+}
+
+.signature-card--warm h2, .signature-card--warm h3, .signature-card--warm h4 {
+  color: var(--color-on-primary);
+}
+
+.signature-card--cream {
+  background: var(--color-signature-cream);
+  color: var(--color-on-signature-cream);
+}
+
+.signature-card--cream h2, .signature-card--cream h3, .signature-card--cream h4 {
+  color: var(--color-on-signature-cream);
+}
+
+/* ============ Section bands ============
+   Alternating surface rhythm: canvas -> signature -> canvas -> soft -> canvas.
+   Never repeat the same band twice in a row. */
+.band {
+  padding: var(--space-section) var(--space-xl);
+}
+
+.band__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.band--soft {
+  background: var(--color-surface-soft);
+}
+
+.band--signature-wrap {
+  padding: var(--space-xxl) var(--space-xl);
+}
+
+/* ============ Hero ============ */
+.hero {
+  padding: calc(var(--space-section) * 1.2) var(--space-xl) var(--space-section);
+  text-align: center;
+}
+
+.hero__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.hero__inner .lede {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__ctas {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  margin-top: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+/* ============ Scroll-stacking services section ============ */
+.services-stack {
+  padding: var(--space-section) 0;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.services-stack__intro {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.services-stack__intro .lede {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-stack__row {
+  position: sticky;
+  top: 88px;
+  background: var(--color-canvas);
+  padding: var(--space-xl);
+  margin-bottom: var(--space-xl);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-hairline);
+  box-shadow: 0 -8px 30px rgba(11, 31, 58, 0.06);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.services-stack__row.is-stacked {
+  transform: scale(0.97);
+  opacity: 0.8;
+}
+
+/* ============ Coming soon ============ */
+.coming-soon {
+  text-align: center;
+  padding: var(--space-section) var(--space-xl);
+}
+
+.coming-soon .lede {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============ Portfolio filters ============ */
+.portfolio-filters {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-xl);
+}
+
+.portfolio-filters__chip {
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-pill);
+  padding: var(--space-xs) var(--space-md);
+  background: var(--color-canvas);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-family: var(--font-body);
+}
+
+.portfolio-filters__chip.is-active {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  border-color: var(--color-primary);
+}
+
+.portfolio-card.is-hidden {
+  display: none;
+}
+
+/* ============ Service detail ============ */
+.service-detail {
+  max-width: 780px;
+}
+
+/* ============ Legal pages ============ */
+.legal-page {
+  max-width: 780px;
+}
+
+.legal-page blockquote {
+  background: var(--color-surface-soft);
+  border-left: 3px solid var(--color-signature-warm);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md) var(--space-lg);
+  margin: 0 0 var(--space-lg);
+}
+
+.legal-page blockquote p {
+  margin-bottom: 0;
+  max-width: none;
+}
+
+.legal-page h2 {
+  margin-top: var(--space-xl);
+  font-size: 1.35rem;
+}
+
+/* ============ Store / product detail ============ */
+.product-detail {
+  max-width: 780px;
+}
+
+.product-detail__price {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.product-detail__unavailable {
+  color: var(--color-muted);
+}

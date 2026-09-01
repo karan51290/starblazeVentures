@@ -1,0 +1,37 @@
+---
+layout: layouts/page.njk
+title: Portfolio | StarBlaze Ventures
+description: Case studies and project work from StarBlaze Ventures.
+permalink: portfolio/
+---
+{% from "macros/image-placeholder.njk" import imagePlaceholder %}
+
+{% if business.featureFlags.portfolioEnabled %}
+<h1>Our Portfolio</h1>
+
+<div class="portfolio-filters" id="portfolio-filters">
+  {% for service in services %}
+    <button type="button" class="portfolio-filters__chip" data-filter="{{ service.slug }}">{{ service.title }}</button>
+  {% endfor %}
+</div>
+
+<div class="card-grid" id="portfolio-grid">
+  {% for project in portfolioProjects %}
+  <div class="card portfolio-card" data-services="{{ project.serviceTags | join(',') }}">
+    {{ imagePlaceholder(project.imageAlt, "4/3", project.image) }}
+    <div class="card__body">
+      <h3 class="card__title">{{ project.title }}</h3>
+      <p class="card__summary">{{ project.excerpt }}</p>
+      {% if project.projectUrl %}<a class="card__cta" href="{{ project.projectUrl }}">View project &rarr;</a>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<script src="/assets/js/portfolio-filter.js" defer></script>
+{% else %}
+<section class="coming-soon">
+  <h1>Our Portfolio is Coming Soon</h1>
+  <p>We're putting together case studies from our client work — check back soon, or <a href="/contact/">get in touch</a> and we'll happily share examples relevant to your industry directly.</p>
+</section>
+{% endif %}

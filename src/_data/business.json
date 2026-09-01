@@ -1,0 +1,81 @@
+{
+  "brand": {
+    "id": "starblaze",
+    "name": "StarBlaze Ventures",
+    "legalName": "StarBlaze Ventures",
+    "tagline": "Your Business, Fully Online. Fully Managed.",
+    "logo": {
+      "src": "",
+      "alt": "StarBlaze Ventures logo — placeholder, needs real logo"
+    }
+  },
+  "site": {
+    "url": "https://starblaze.comfesta.in",
+    "defaultLocale": "en-IN",
+    "themeColor": "#0B1F3A"
+  },
+  "contact": {
+    "address": {
+      "line1": "C8/1, Gr. Floor, Sector 4, Eldeco Estate One",
+      "city": "Panipat",
+      "state": "Haryana",
+      "postalCode": "",
+      "country": "IN"
+    },
+    "phone": "+919812000321",
+    "phoneDisplay": "+91 98120 00321",
+    "email": "",
+    "mapsUrl": "https://www.google.com/maps/place/ELDECO+ESTATE+ONE+PANIPAT/data=!4m2!3m1!1s0x0:0x33bc70b719e884f0?sa=X&ved=1t:2428&ictx=111"
+  },
+  "social": {
+    "instagram": "",
+    "linkedin": "",
+    "facebook": "",
+    "whatsapp": "https://wa.me/919812000321"
+  },
+  "theme": {
+    "colors": {
+      "primary": "#0B1F3A",
+      "primaryActive": "#081730",
+      "accent": "#F2B705",
+      "ink": "#12131A",
+      "body": "#333840",
+      "muted": "#5B6472",
+      "hairline": "#E1E4EA",
+      "canvas": "#FFFFFF",
+      "surfaceSoft": "#F6F7FB",
+      "surfaceStrong": "#E7E9F0",
+      "onPrimary": "#FFFFFF",
+      "link": "#1B61C9",
+      "signatureDark": "#0B1F3A",
+      "signatureWarm": "#9A4A12",
+      "signatureCream": "#F5EFE2",
+      "onSignatureCream": "#2A2115"
+    },
+    "radius": {
+      "xs": "2px",
+      "sm": "6px",
+      "md": "10px",
+      "lg": "12px",
+      "pill": "9999px"
+    },
+    "spacing": {
+      "xs": "8px",
+      "sm": "12px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "xxl": "48px",
+      "section": "96px"
+    },
+    "fonts": {
+      "display": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
+      "body": "'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    }
+  },
+  "featureFlags": {
+    "portfolioEnabled": false,
+    "storeEnabled": true
+  }
+}

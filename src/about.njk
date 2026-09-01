@@ -1,0 +1,26 @@
+---
+layout: layouts/page.njk
+title: About | StarBlaze Ventures
+description: StarBlaze Ventures helps small and growing businesses build a real digital presence.
+---
+{% from "macros/image-placeholder.njk" import imagePlaceholder %}
+
+<div class="narrow">
+<h1>We're StarBlaze Ventures.</h1>
+
+<p>StarBlaze Ventures works with small and growing businesses that want a real digital presence — not just a website, but the hosting, marketing, and automation that make that website actually work for the business behind it.</p>
+
+<p>We started StarBlaze because we kept seeing the same problem: businesses either paid too much for scattered, disconnected services, or did without because "digital" felt overwhelming. So we built a single team that handles the whole stack — design, hosting, cloud, GMB, AI automation, WhatsApp marketing, performance marketing, social media, and custom software — so our clients get one point of contact and one team that's actually accountable for results.</p>
+
+<h2>What we believe</h2>
+<ul>
+  <li><strong>Fully managed means fully managed.</strong> We don't hand you a login and walk away — we keep things running.</li>
+  <li><strong>Digital tools should save you time, not cost you more of it.</strong> Every service we offer exists to give business owners their time back.</li>
+  <li><strong>Right-sized, not over-sold.</strong> We recommend what your business needs at its current size, not the most expensive package we have.</li>
+</ul>
+
+{{ imagePlaceholder("StarBlaze Ventures team collaborating", "16/9", "https://loremflickr.com/1200/675/team,startup?lock=218") }}
+
+<p><strong>Address:</strong> {{ business.contact.address.line1 }}, {{ business.contact.address.city }}<br>
+<strong>Phone:</strong> {{ business.contact.phoneDisplay }}</p>
+</div>

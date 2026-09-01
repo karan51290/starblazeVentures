@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+---
+{% from "macros/image-placeholder.njk" import imagePlaceholder %}
+{% from "macros/button.njk" import button %}
+<article class="page-container service-detail">
+  <h1>{{ service.title }}</h1>
+  <p class="service-detail__summary">{{ service.summary }}</p>
+  {{ imagePlaceholder(service.imageAlt, "16/9", service.image) }}
+  <div class="service-detail__body">
+    {{ service.body | markdownify | safe }}
+  </div>
+  {{ button("Get in Touch", "/contact/") }}
+</article>
