@@ -22,3 +22,4 @@ All images are from [Pexels](https://www.pexels.com) and used under the [Pexels 
 | `src/assets/images/contact-office.jpg` | https://www.pexels.com/photo/29238152/ |
 | `src/assets/images/portfolio-1.jpg` | https://www.pexels.com/photo/6621020/ |
 | `src/assets/images/portfolio-2.jpg` | https://www.pexels.com/photo/36729522/ |
+| `src/assets/images/hero-home.jpg` | https://www.pexels.com/photo/7310202/ |

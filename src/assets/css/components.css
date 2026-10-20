@@ -1012,3 +1012,47 @@ button.btn {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* ============ Split hero (home) ============ */
+.page-container:has(> .hero--split) {
+  padding-top: var(--space-xl);
+}
+
+.hero--split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: var(--space-xxl);
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-xl) 0 var(--space-xxl);
+  text-align: left;
+}
+
+.hero--split .hero__inner {
+  max-width: none;
+  margin: 0;
+}
+
+.hero--split .hero__inner .lede {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero--split .hero__ctas {
+  justify-content: flex-start;
+}
+
+.hero--split .hero__media .media,
+.hero--split .hero__media .image-placeholder {
+  margin-bottom: 0;
+  border-radius: var(--radius-lg);
+}
+
+@media (max-width: 900px) {
+  .hero--split {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    padding-bottom: var(--space-xl);
+  }
+}

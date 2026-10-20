@@ -7,7 +7,7 @@ description: StarBlaze Ventures builds, hosts, and grows digital-first businesse
 {% from "macros/image-placeholder.njk" import imagePlaceholder %}
 {% from "macros/button.njk" import button %}
 
-<section class="hero">
+<section class="hero hero--split">
   <div class="hero__inner">
     <span class="eyebrow">Fully Managed Digital Growth</span>
     <h1>Your Business, Fully Online. Fully Managed.</h1>
@@ -16,6 +16,9 @@ description: StarBlaze Ventures builds, hosts, and grows digital-first businesse
       {{ button("Explore Our Services", "/services/", "primary") }}
       {{ button("Talk to Us", "/contact/", "secondary") }}
     </div>
+  </div>
+  <div class="hero__media">
+    {{ imagePlaceholder("Laptop showing an online business website, with notes and parcel boxes on a desk", "4/3", "/assets/images/hero-home.jpg") }}
   </div>
 </section>
 
