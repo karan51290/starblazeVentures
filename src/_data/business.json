@@ -76,6 +76,7 @@
   },
   "featureFlags": {
     "portfolioEnabled": false,
-    "storeEnabled": true
+    "storeEnabled": true,
+    "buyEnabled": false
   }
 }

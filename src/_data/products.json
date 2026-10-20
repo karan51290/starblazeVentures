@@ -6,15 +6,50 @@
     "category": "ebook",
     "shortDescription": "A practical, no-fluff guide to using WhatsApp for marketing and customer engagement.",
     "description": "Learn how to set up WhatsApp Business properly, build broadcast lists the right way, write messages that get replies instead of getting blocked, and turn WhatsApp into a real sales and support channel — written specifically for small business owners, not marketers.",
-    "price": null,
+    "price": 9,
     "currency": "INR",
-    "priceDisplayOverride": "Price TBD",
+    "priceDisplayOverride": "",
     "buyNowUrl": "",
     "imageAlt": "WhatsApp Marketing eBook cover",
-    "image": "https://loremflickr.com/800/600/ebook,book?lock=210",
+    "image": "https://picsum.photos/seed/sb210/800/600",
     "featured": true,
     "seoTitle": "WhatsApp Marketing eBook | StarBlaze Ventures",
-    "seoDescription": "A practical guide to WhatsApp marketing and customer engagement for small businesses."
+    "seoDescription": "A practical guide to WhatsApp marketing and customer engagement for small businesses.",
+    "highlights": [
+      "Set up WhatsApp Business properly from the start",
+      "Build broadcast lists the right way",
+      "Write messages that get replies instead of getting blocked",
+      "Turn WhatsApp into a real sales and support channel"
+    ],
+    "audience": "Small business owners who want to use WhatsApp to market and support customers, without needing a marketing background.",
+    "facts": [
+      {
+        "label": "Type",
+        "value": "eBook"
+      },
+      {
+        "label": "Written for",
+        "value": "Small business owners"
+      },
+      {
+        "label": "Delivery",
+        "value": "Digital"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need technical skills?",
+        "a": "No. The guide is written for business owners, not marketers or developers."
+      },
+      {
+        "q": "Is this about WhatsApp Business or the API?",
+        "a": "It starts with setting up WhatsApp Business properly and focuses on practical ways to use it every day."
+      },
+      {
+        "q": "How do I get it?",
+        "a": "Use Contact Us to enquire and we will share how to get your copy."
+      }
+    ]
   },
   {
     "order": 2,
@@ -26,63 +61,183 @@
     "price": 9,
     "currency": "INR",
     "priceDisplayOverride": "",
-    "buyNowUrl": "",
+    "buyNowUrl": "https://wa.me/919812000321?text=google-ai-toolkit",
     "imageAlt": "Google AI Toolkit eBook cover",
-    "image": "https://loremflickr.com/800/600/book,ai?lock=211",
+    "image": "https://picsum.photos/seed/sb211/800/600",
     "featured": true,
     "seoTitle": "Google AI Toolkit eBook — ₹9 | StarBlaze Ventures",
-    "seoDescription": "A ₹9 starter guide to using AI tools for everyday business tasks."
+    "seoDescription": "A ₹9 starter guide to using AI tools for everyday business tasks.",
+    "highlights": [
+      "Practical AI prompts for everyday business tasks",
+      "Tool recommendations you can start using right away",
+      "Covers writing, planning, customer replies and content",
+      "Built for business owners with no technical background"
+    ],
+    "audience": "Business owners and teams who want to use AI tools for day-to-day work but are not sure where to begin.",
+    "facts": [
+      {
+        "label": "Type",
+        "value": "eBook / toolkit"
+      },
+      {
+        "label": "Written for",
+        "value": "Business owners, no technical skills needed"
+      },
+      {
+        "label": "Delivery",
+        "value": "Digital"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need to know anything about AI?",
+        "a": "No. It is designed for beginners."
+      },
+      {
+        "q": "Do I need paid AI subscriptions?",
+        "a": "Contact us if you want to know which tools in the toolkit have free options."
+      },
+      {
+        "q": "How do I get it?",
+        "a": "Use Contact Us to enquire and we will share how to get your copy."
+      }
+    ]
   },
   {
     "order": 3,
-    "slug": "plr-products",
-    "title": "PLR Products",
-    "category": "plr",
-    "shortDescription": "Placeholder listing — pending confirmation of which specific PLR products/bundle is being offered.",
-    "description": "Placeholder — awaiting details from content.md review.",
-    "price": null,
-    "currency": "INR",
-    "priceDisplayOverride": "Price TBD",
-    "buyNowUrl": "",
-    "imageAlt": "PLR products bundle cover",
-    "image": "https://loremflickr.com/800/600/digital,download?lock=212",
-    "featured": false,
-    "seoTitle": "PLR Products | StarBlaze Ventures",
-    "seoDescription": "PLR products available from StarBlaze Ventures."
-  },
-  {
-    "order": 4,
     "slug": "whatsapp-automation-platform",
     "title": "WhatsApp Automation Platform",
     "category": "platform",
-    "shortDescription": "A ready-to-use platform for automating WhatsApp conversations, broadcasts, and order updates.",
-    "description": "Placeholder — awaiting confirmed feature set and plan tiers from content.md review.",
-    "price": null,
+    "shortDescription": "Connect real WhatsApp numbers, send bulk messages and schedules, automate replies with keywords or AI, and track it all from one dashboard.",
+    "description": "Run your WhatsApp business on autopilot. Connect real WhatsApp numbers, send to thousands of contacts, automate replies with keywords or AI, and keep every number healthy, all from one dashboard.",
+    "price": 1999,
     "currency": "INR",
-    "priceDisplayOverride": "Price TBD",
+    "priceDisplayOverride": "Enquire for Price",
     "buyNowUrl": "",
     "imageAlt": "WhatsApp Automation Platform dashboard screenshot",
-    "image": "https://loremflickr.com/800/600/dashboard,automation?lock=213",
+    "image": "https://picsum.photos/seed/sb213/800/600",
     "featured": true,
     "seoTitle": "WhatsApp Automation Platform | StarBlaze Ventures",
-    "seoDescription": "A ready-to-use platform for automating WhatsApp conversations and order updates."
+    "seoDescription": "WhatsApp Automation Platform: bulk sender, auto-replies and an AI agent for WhatsApp, managed from one dashboard.",
+    "highlights": [
+      "Schedules and broadcasts to contact lists, one-time or recurring (hourly, daily, weekly, monthly or custom)",
+      "Keyword auto-replies that answer instantly with a pre-written template",
+      "AI agent that holds conversations using your own OpenAI-compatible API key, with a configurable prompt, memory, hourly reply cap, sleep windows and handoff to a human",
+      "Webhooks: a keyword typed in a chat can trigger a workflow in your other systems",
+      "Contact and lead tools: contact lists with CSV import and export, plus leads surfaced from inbound conversations",
+      "Extract contacts, groups and group members from a connected number and save them to a list or export to Excel",
+      "Number warm-up, to build a new number's history safely before real use",
+      "Protection tools: a Do Not Contact list with a stop keyword, plus daily send caps and sleep windows per number",
+      "Live sending analytics per number",
+      "Multi-number support: manage as many numbers as your plan allows"
+    ],
+    "audience": "Businesses, agencies and marketers who run WhatsApp at scale and want sending, replies and number health managed in one place.",
+    "facts": [
+      {
+        "label": "Type",
+        "value": "Software platform (web dashboard)"
+      },
+      {
+        "label": "Connects via",
+        "value": "Scanning a QR code with your WhatsApp number"
+      },
+      {
+        "label": "AI agent",
+        "value": "Bring your own OpenAI-compatible API key"
+      },
+      {
+        "label": "Numbers",
+        "value": "Multiple, depending on your plan"
+      },
+      {
+        "label": "Pricing",
+        "value": "Plans by sending volume; custom plans available"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How do I connect a WhatsApp number?",
+        "a": "You add the number in the dashboard and scan a QR code with WhatsApp on your phone."
+      },
+      {
+        "q": "Can my number get banned?",
+        "a": "WhatsApp can restrict numbers that send too many messages too fast, or messages people did not ask for. The platform gives you send limits, sleep windows, a warm-up tool and a Do Not Contact list to help, but you should still start slowly and send content your recipients want."
+      },
+      {
+        "q": "Do I need an AI account for the AI agent?",
+        "a": "Yes. The AI agent uses your own OpenAI-compatible API key, so AI usage costs are billed by that provider."
+      },
+      {
+        "q": "Can I use more than one number?",
+        "a": "Yes. You can manage as many numbers as your plan allows, each with its own limits and status."
+      },
+      {
+        "q": "Do you offer a custom plan?",
+        "a": "Yes. If you need higher volume or more numbers, contact us."
+      }
+    ]
   },
   {
-    "order": 5,
-    "slug": "wasender",
-    "title": "WaSender",
-    "category": "platform",
-    "shortDescription": "Placeholder — pending confirmation of how this differs from the WhatsApp Automation Platform above.",
-    "description": "Placeholder — awaiting details from content.md review.",
-    "price": null,
+    "order": 4,
+    "slug": "whatsapp-bulk-sender",
+    "title": "Whatsapp Bulk Sender",
+    "category": "software",
+    "shortDescription": "WASender - WhatsApp bulk sender & marketing automation software. Send unlimited bulk messages, manage multiple accounts, extract leads, etc",
+    "description": "WASender is a powerful WhatsApp bulk message sender and WhatsApp marketing automation software built for businesses, digital marketers, agencies, and resellers who need to run large-scale WhatsApp bulk messaging campaigns without getting banned. Whether you're searching for a WhatsApp mass messaging tool, a WhatsApp automation software for PC, a bulk WhatsApp sender for Windows, or a complete WhatsApp marketing tool with lead generation, WASender combines everything into one desktop application — bulk messaging, multi-account management, lead extraction from Google Maps, group automation, and a reseller license system — engineered with human-like sending behavior to keep your WhatsApp number safe from bans.",
+    "price": 999,
     "currency": "INR",
-    "priceDisplayOverride": "Price TBD",
+    "priceDisplayOverride": "Enquire for Price",
     "buyNowUrl": "",
     "imageAlt": "WaSender product screenshot",
-    "image": "https://loremflickr.com/800/600/smartphone,app?lock=214",
+    "image": "https://picsum.photos/seed/sb214/800/600",
     "featured": false,
     "seoTitle": "WaSender | StarBlaze Ventures",
-    "seoDescription": "WaSender — a WhatsApp sending tool from StarBlaze Ventures."
+    "seoDescription": "WaSender — a WhatsApp sending tool from StarBlaze Ventures.",
+    "highlights": [
+      "Send bulk WhatsApp messages for large campaigns",
+      "Manage multiple WhatsApp accounts",
+      "Extract leads from Google Maps",
+      "Group automation tools",
+      "Reseller license system",
+      "Human-like sending behavior designed to reduce the risk of bans"
+    ],
+    "audience": "Businesses, digital marketers, agencies and resellers who run large-scale WhatsApp messaging campaigns.",
+    "facts": [
+      {
+        "label": "Type",
+        "value": "Desktop software"
+      },
+      {
+        "label": "Platform",
+        "value": "Windows PC"
+      },
+      {
+        "label": "Accounts",
+        "value": "Multiple WhatsApp accounts"
+      },
+      {
+        "label": "Licensing",
+        "value": "Reseller license system available"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is this a web app or a desktop program?",
+        "a": "WASender is a desktop application for your PC."
+      },
+      {
+        "q": "Will my number be safe from bans?",
+        "a": "It uses human-like sending behavior to help protect your number, but no tool can guarantee that WhatsApp will never restrict an account. Send relevant messages to people who want them."
+      },
+      {
+        "q": "Can I resell it?",
+        "a": "A reseller license system is included. Contact us for terms."
+      },
+      {
+        "q": "Can I use more than one WhatsApp account?",
+        "a": "Yes, multi-account management is built in."
+      }
+    ]
   },
   {
     "order": 6,
@@ -90,15 +245,59 @@
     "title": "N8N Managed Service",
     "category": "service",
     "shortDescription": "A fully managed n8n automation setup — we host, configure, and maintain your automation workflows.",
-    "description": "For businesses that want the power of n8n workflow automation without managing the server, updates, or setup themselves — we handle hosting, configuration, and ongoing maintenance so your automations just keep running.",
+    "description": "For businesses that want the power of n8n workflow automation without managing the server, updates, or setup themselves. We handle hosting, configuration, and ongoing maintenance so your automations just keep running.",
     "price": null,
     "currency": "INR",
-    "priceDisplayOverride": "Price TBD",
+    "priceDisplayOverride": "Enquire for Price",
     "buyNowUrl": "",
     "imageAlt": "n8n workflow automation dashboard screenshot",
-    "image": "https://loremflickr.com/800/600/workflow,automation?lock=215",
+    "image": "https://picsum.photos/seed/sb215/800/600",
     "featured": false,
     "seoTitle": "N8N Managed Service | StarBlaze Ventures",
-    "seoDescription": "Fully managed n8n workflow automation hosting and maintenance."
+    "seoDescription": "Fully managed n8n workflow automation hosting and maintenance.",
+    "highlights": [
+      "Your own n8n instance, hosted and configured for you",
+      "Updates and maintenance handled by us",
+      "Help setting up your first automated workflows",
+      "Connect the tools you already use, such as WhatsApp, email, spreadsheets and CRMs",
+      "Support when a workflow needs fixing or changing"
+    ],
+    "audience": "Businesses that want workflow automation but do not want to run servers, apply updates or fix broken setups themselves.",
+    "facts": [
+      {
+        "label": "Type",
+        "value": "Managed service"
+      },
+      {
+        "label": "Software",
+        "value": "n8n workflow automation"
+      },
+      {
+        "label": "We handle",
+        "value": "Hosting, setup, updates and maintenance"
+      },
+      {
+        "label": "Pricing",
+        "value": "Contact us for a quote"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is n8n?",
+        "a": "n8n is a workflow automation tool that connects your apps and moves data between them without manual work."
+      },
+      {
+        "q": "Do I need technical skills?",
+        "a": "No. We host and maintain it, and can help you build your workflows."
+      },
+      {
+        "q": "Can you build the workflows for me?",
+        "a": "Yes. Tell us what you want to automate and we will advise on the best approach."
+      },
+      {
+        "q": "Who owns my workflows and data?",
+        "a": "Terms are agreed in writing when we start, so you know exactly where you stand."
+      }
+    ]
   }
 ]

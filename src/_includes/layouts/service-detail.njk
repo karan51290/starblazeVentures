@@ -2,7 +2,8 @@
 layout: layouts/base.njk
 ---
 {% from "macros/image-placeholder.njk" import imagePlaceholder %}
-{% from "macros/button.njk" import button %}
+{% from "macros/faq.njk" import faq %}
+{% set enquiryUrl = business.contact.phone | whatsappLink("want to enquire about " + (page.url | absoluteUrl(business.site.url))) %}
 <article class="page-container service-detail">
   <h1>{{ service.title }}</h1>
   <p class="service-detail__summary">{{ service.summary }}</p>
@@ -10,5 +11,48 @@ layout: layouts/base.njk
   <div class="service-detail__body">
     {{ service.body | markdownify | safe }}
   </div>
-  {{ button("Get in Touch", "/contact/") }}
+
+  {% if service.process and service.process.length %}
+  <section class="detail-section">
+    <h2>How it works</h2>
+    <ol class="steps">
+      {% for step in service.process %}
+      <li class="steps__item">
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.text }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
+  {% if service.benefits and service.benefits.length %}
+  <section class="detail-section">
+    <h2>What you get</h2>
+    <ul class="check-list">
+      {% for benefit in service.benefits %}<li>{{ benefit }}</li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {{ faq(service.faq) }}
+
+  <section class="detail-cta">
+    <h2>Interested in {{ service.title }}?</h2>
+    <p>Message us on WhatsApp and we will get back to you.</p>
+    <a class="btn btn--pill" href="{{ enquiryUrl }}" target="_blank" rel="noopener">Contact Us on WhatsApp</a>
+  </section>
+
+  {% if service.related and service.related.length %}
+  <section class="detail-section">
+    <h2>Related services</h2>
+    <ul class="related-list">
+      {% for item in services %}
+        {% if item.slug in service.related %}
+        <li><a href="/services/{{ item.slug }}/">{{ item.title }}</a> &mdash; {{ item.summary }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
 </article>

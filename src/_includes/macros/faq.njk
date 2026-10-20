@@ -1,0 +1,15 @@
+{% macro faq(items) %}
+{% if items and items.length %}
+<section class="detail-section">
+  <h2>Frequently asked questions</h2>
+  <div class="faq">
+    {% for item in items %}
+    <details class="faq__item">
+      <summary>{{ item.q }}</summary>
+      <p>{{ item.a }}</p>
+    </details>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+{% endmacro %}

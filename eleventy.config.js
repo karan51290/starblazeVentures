@@ -20,6 +20,11 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("whatsappDigits", (phone) => (phone || "").replace(/[^\d]/g, ""));
 
+  eleventyConfig.addFilter("whatsappLink", (phone, message) => {
+    const digits = (phone || "").replace(/[^\d]/g, "");
+    return `https://wa.me/${digits}?text=${encodeURIComponent(message || "")}`;
+  });
+
   eleventyConfig.addFilter("objectValues", (obj) => Object.values(obj || {}).filter(Boolean));
 
   return {

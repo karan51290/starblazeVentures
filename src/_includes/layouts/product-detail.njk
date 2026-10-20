@@ -2,7 +2,8 @@
 layout: layouts/base.njk
 ---
 {% from "macros/image-placeholder.njk" import imagePlaceholder %}
-{% from "macros/button.njk" import button %}
+{% from "macros/faq.njk" import faq %}
+{% set enquiryUrl = business.contact.phone | whatsappLink("want to enquire about " + (page.url | absoluteUrl(business.site.url))) %}
 <article class="page-container product-detail">
   <h1>{{ product.title }}</h1>
   <p class="product-detail__price">
@@ -12,9 +13,52 @@ layout: layouts/base.njk
   <div class="product-detail__body">
     {{ product.description | markdownify | safe }}
   </div>
-  {% if product.buyNowUrl %}
-    {{ button("Buy Now", product.buyNowUrl, "pill") }}
-  {% else %}
-    <p class="product-detail__unavailable">Buy link coming soon — <a href="/contact/">contact us</a> to purchase.</p>
+
+  <div class="product-detail__actions">
+    {% if business.featureFlags.buyEnabled and product.buyNowUrl %}
+      <a class="btn btn--pill" href="{{ product.buyNowUrl }}">Buy Now</a>
+    {% else %}
+      <button type="button" class="btn btn--pill" data-buy-now>Buy Now</button>
+    {% endif %}
+    <a class="btn btn--secondary btn--pill-outline" href="{{ enquiryUrl }}" target="_blank" rel="noopener">Contact Us</a>
+  </div>
+
+  {% if product.highlights and product.highlights.length %}
+  <section class="detail-section">
+    <h2>Highlights</h2>
+    <ul class="check-list">
+      {% for item in product.highlights %}<li>{{ item }}</li>{% endfor %}
+    </ul>
+  </section>
   {% endif %}
+
+  {% if product.audience %}
+  <section class="detail-section">
+    <h2>Who it's for</h2>
+    <p>{{ product.audience }}</p>
+  </section>
+  {% endif %}
+
+  {% if product.facts and product.facts.length %}
+  <section class="detail-section">
+    <h2>Product details</h2>
+    <dl class="facts">
+      {% for fact in product.facts %}
+      <div class="facts__row"><dt>{{ fact.label }}</dt><dd>{{ fact.value }}</dd></div>
+      {% endfor %}
+    </dl>
+  </section>
+  {% endif %}
+
+  {{ faq(product.faq) }}
 </article>
+
+<dialog class="buy-dialog" id="buy-dialog" aria-labelledby="buy-dialog-title">
+  <h2 id="buy-dialog-title">Coming soon</h2>
+  <p>Online purchase is not available yet. Please click <strong>Contact Us</strong> for more details.</p>
+  <div class="buy-dialog__actions">
+    <a class="btn btn--pill" href="{{ enquiryUrl }}" target="_blank" rel="noopener">Contact Us</a>
+    <button type="button" class="btn btn--secondary btn--pill-outline" data-buy-close>Close</button>
+  </div>
+</dialog>
+<script src="/assets/js/buy-modal.js" defer></script>

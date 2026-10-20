@@ -8,7 +8,7 @@
     "clientName": "",
     "projectUrl": "",
     "imageAlt": "Placeholder screenshot of an example client website redesign project",
-    "image": "https://loremflickr.com/800/600/website,design?lock=216",
+    "image": "https://picsum.photos/seed/sb216/800/600",
     "featured": false
   },
   {
@@ -20,7 +20,7 @@
     "clientName": "",
     "projectUrl": "",
     "imageAlt": "Placeholder screenshot of an example WhatsApp automation project",
-    "image": "https://loremflickr.com/800/600/smartphone,messaging?lock=217",
+    "image": "https://picsum.photos/seed/sb217/800/600",
     "featured": false
   }
 ]
