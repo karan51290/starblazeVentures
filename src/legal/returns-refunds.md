@@ -5,7 +5,7 @@ description: Returns & Refunds Policy for StarBlaze Ventures.
 permalink: legal/returns-refunds/
 ---
 
-> **⚠️ This policy is drafted from your reference example, but is not yet approved for publishing.** Please confirm: (1) that store-credit-only (no cash refunds) matches what you actually intend to offer, (2) the exclusions list is complete, and (3) whether this same policy applies to all Store products (ebooks, PLR, platforms, N8N service) or if any of them need different terms.
+*Last updated: 20 October 2026*
 
 ## Returns
 
@@ -19,6 +19,8 @@ If a purchased service or product stops functioning within its stated validity p
 
 Where a replacement is not technically possible or unavailable, a pro-rata refund will be issued as **Store Credit**, redeemable against future purchases from StarBlaze Ventures.
 
+Cash refunds are not offered as standard. In **exceptional cases** where neither a replacement nor store credit is possible, we will provide a refund to the original payment method, calculated pro-rata on the unused portion of the product or service.
+
 ## Calculation
 
 Replacement/refund value is based on the unused portion of the service at the time of permanent termination.
@@ -30,8 +32,8 @@ Replacement/refund value is based on the unused portion of the service at the ti
 
 ## Exclusions
 
-Refunds, replacements, and store credit are **not** provided where: the account was suspended for violating our Terms & Conditions; the customer changed their mind after delivery/access was granted; or the issue arises from a change in policy by an underlying third-party service provider outside our control.
+Refunds (including exceptional-case refunds), replacements, and store credit are **not** provided where: the account was suspended for violating our Terms & Conditions; the customer changed their mind after delivery/access was granted; or the issue arises from a change in policy by an underlying third-party service provider outside our control.
 
 ## How to Request a Replacement or Refund
 
-Contact us at *[Placeholder — business email]* or +91 98120 00321 within a reasonable time of the issue occurring, with your order/reference details.
+Contact us at {{ business.contact.email }} or on {{ business.contact.phoneDisplay }} (phone or WhatsApp) within a reasonable time of the issue occurring, with your order/reference details.

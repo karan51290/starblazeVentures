@@ -66,7 +66,7 @@ layout: layouts/base.njk
       <div class="side-card">
         <h2>Related services</h2>
         <ul class="related-list">
-          {% for item in services %}
+          {% for item in activeServices %}
             {% if item.slug in service.related %}
             <li><a href="/services/{{ item.slug }}/">{{ item.title }}</a></li>
             {% endif %}

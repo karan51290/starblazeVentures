@@ -25,7 +25,7 @@ description: StarBlaze Ventures builds, hosts, and grows digital-first businesse
     <p class="lede">From your first website to fully automated customer conversations — pick a service, or let us run the whole stack.</p>
   </div>
 
-  {% set rows = services | batch(3) %}
+  {% set rows = activeServices | batch(3) %}
   {% for row in rows %}
   <div class="services-stack__row" style="z-index: {{ loop.index }};">
     <div class="card-grid">
@@ -37,7 +37,7 @@ description: StarBlaze Ventures builds, hosts, and grows digital-first businesse
   {% endfor %}
 </section>
 
-<script src="/assets/js/scroll-stack.js" defer></script>
+<script src="/assets/js/scroll-stack.js?v={{ buildVersion }}" defer></script>
 
 <div class="band band--signature-wrap">
   <div class="band__inner signature-card signature-card--dark">

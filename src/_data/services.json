@@ -2,6 +2,7 @@
   {
     "order": 1,
     "slug": "website-designing",
+    "enabled": true,
     "title": "Website Designing",
     "summary": "Fast, modern, mobile-first websites that actually convert visitors into customers.",
     "seoTitle": "Website Designing Services | StarBlaze Ventures",
@@ -60,6 +61,7 @@
   {
     "order": 2,
     "slug": "fully-managed-website-hosting",
+    "enabled": true,
     "title": "Fully Managed Website Hosting",
     "summary": "We keep your site online, secure, and fast — so you never have to think about servers.",
     "seoTitle": "Fully Managed Website Hosting | StarBlaze Ventures",
@@ -118,6 +120,7 @@
   {
     "order": 3,
     "slug": "managed-cloud-services",
+    "enabled": true,
     "title": "Managed Cloud Services",
     "summary": "Cloud infrastructure, set up and maintained for you, sized to what your business actually needs.",
     "seoTitle": "Managed Cloud Services | StarBlaze Ventures",
@@ -176,6 +179,7 @@
   {
     "order": 4,
     "slug": "gmb-services",
+    "enabled": true,
     "title": "GMB Services",
     "summary": "Get found on Google Maps and Search, with a Business Profile that's fully optimized and kept up to date.",
     "seoTitle": "Google Business Profile (GMB) Services | StarBlaze Ventures",
@@ -234,6 +238,7 @@
   {
     "order": 5,
     "slug": "ai-automation",
+    "enabled": true,
     "title": "AI & Automation",
     "summary": "Automate the repetitive parts of your business with AI tools built around how you actually work.",
     "seoTitle": "AI & Automation Services | StarBlaze Ventures",
@@ -292,6 +297,7 @@
   {
     "order": 6,
     "slug": "whatsapp-marketing-automation",
+    "enabled": true,
     "title": "WhatsApp Marketing & Automation",
     "summary": "Reach customers where they already are, with automated flows that feel personal.",
     "seoTitle": "WhatsApp Marketing & Automation | StarBlaze Ventures",
@@ -350,6 +356,7 @@
   {
     "order": 7,
     "slug": "performance-marketing",
+    "enabled": true,
     "title": "Performance Marketing",
     "summary": "Paid campaigns built around measurable return, not vanity metrics.",
     "seoTitle": "Performance Marketing Services | StarBlaze Ventures",
@@ -408,6 +415,7 @@
   {
     "order": 8,
     "slug": "social-media-management",
+    "enabled": true,
     "title": "Social Media Management",
     "summary": "Consistent, on-brand presence across your social channels, without you lifting a finger.",
     "seoTitle": "Social Media Management | StarBlaze Ventures",
@@ -466,6 +474,7 @@
   {
     "order": 9,
     "slug": "custom-business-software",
+    "enabled": true,
     "title": "Custom Business Software, Apps & Solutions",
     "summary": "When off-the-shelf tools stop being enough, we build exactly what your business needs.",
     "seoTitle": "Custom Business Software & App Development | StarBlaze Ventures",

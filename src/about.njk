@@ -25,7 +25,7 @@ description: StarBlaze Ventures helps small and growing businesses build a real 
 </section>
 
 <section class="stat-strip" aria-label="At a glance">
-  <div><strong>{{ services.length }}</strong><span>services under one roof</span></div>
+  <div><strong>{{ activeServices.length }}</strong><span>services under one roof</span></div>
   <div><strong>1</strong><span>team, one point of contact</span></div>
   <div><strong>100%</strong><span>fully managed, we keep things running</span></div>
 </section>
@@ -51,7 +51,7 @@ description: StarBlaze Ventures helps small and growing businesses build a real 
 <section class="detail-section">
   <h2>What we do</h2>
   <ul class="pill-list">
-    {% for service in services %}<li><a href="/services/{{ service.slug }}/">{{ service.title }}</a></li>{% endfor %}
+    {% for service in activeServices %}<li><a href="/services/{{ service.slug }}/">{{ service.title }}</a></li>{% endfor %}
   </ul>
 </section>
 

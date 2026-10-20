@@ -10,7 +10,7 @@ permalink: portfolio/
 <h1>Our Portfolio</h1>
 
 <div class="portfolio-filters" id="portfolio-filters">
-  {% for service in services %}
+  {% for service in activeServices %}
     <button type="button" class="portfolio-filters__chip" data-filter="{{ service.slug }}">{{ service.title }}</button>
   {% endfor %}
 </div>
@@ -28,7 +28,7 @@ permalink: portfolio/
   {% endfor %}
 </div>
 
-<script src="/assets/js/portfolio-filter.js" defer></script>
+<script src="/assets/js/portfolio-filter.js?v={{ buildVersion }}" defer></script>
 {% else %}
 <section class="coming-soon">
   <h1>Our Portfolio is Coming Soon</h1>

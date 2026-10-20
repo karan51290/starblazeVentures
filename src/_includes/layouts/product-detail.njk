@@ -19,9 +19,11 @@ layout: layouts/base.njk
     <div class="pdp__buybox">
       <span class="badge">{{ categoryLabels[product.category] or product.category }}</span>
       <h1>{{ product.title }}</h1>
+      {% if product.priceDisplayOverride or product.price %}
       <p class="product-detail__price">
-        {% if product.priceDisplayOverride %}{{ product.priceDisplayOverride }}{% elif product.price %}&#8377;{{ product.price }}{% endif %}
+        {% if product.priceDisplayOverride %}{{ product.priceDisplayOverride }}{% else %}&#8377;{{ product.price | inr }}{% endif %}
       </p>
+      {% endif %}
       <p class="pdp__short">{{ product.shortDescription }}</p>
 
       {% if product.highlights and product.highlights.length %}
@@ -90,7 +92,7 @@ layout: layouts/base.njk
   <section class="detail-section">
     <h2>More from the store</h2>
     <div class="card-grid">
-      {% for other in products %}
+      {% for other in activeProducts %}
         {% if other.slug != product.slug %}
           {{ card(other.title, other.shortDescription, "/store/" + other.slug + "/", other.imageAlt, "View product", other.image) }}
         {% endif %}
@@ -107,4 +109,4 @@ layout: layouts/base.njk
     <button type="button" class="btn btn--secondary btn--pill-outline" data-buy-close>Close</button>
   </div>
 </dialog>
-<script src="/assets/js/buy-modal.js" defer></script>
+<script src="/assets/js/buy-modal.js?v={{ buildVersion }}" defer></script>

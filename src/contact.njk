@@ -50,10 +50,10 @@ description: Get in touch with StarBlaze Ventures — C8/1, Gr. Floor, Sector 4,
           <select name="topic">
             <option value="">Not sure yet</option>
             <optgroup label="Services">
-              {% for service in services %}<option>{{ service.title }}</option>{% endfor %}
+              {% for service in activeServices %}<option>{{ service.title }}</option>{% endfor %}
             </optgroup>
             <optgroup label="Store">
-              {% for product in products %}<option>{{ product.title }}</option>{% endfor %}
+              {% for product in activeProducts %}<option>{{ product.title }}</option>{% endfor %}
             </optgroup>
           </select>
         </label>
@@ -74,4 +74,4 @@ description: Get in touch with StarBlaze Ventures — C8/1, Gr. Floor, Sector 4,
     </div>
   </aside>
 </div>
-<script src="/assets/js/contact-form.js" defer></script>
+<script src="/assets/js/contact-form.js?v={{ buildVersion }}" defer></script>

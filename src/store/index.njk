@@ -10,7 +10,7 @@ permalink: store/
 <p>Ready-to-use tools, guides, and platforms you can buy and start using right away.</p>
 
 <div class="card-grid">
-  {% for product in products %}
+  {% for product in activeProducts %}
     {{ card(product.title, product.shortDescription, "/store/" + product.slug + "/", product.imageAlt, "View product", product.image) }}
   {% endfor %}
 </div>
