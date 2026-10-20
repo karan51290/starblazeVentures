@@ -112,7 +112,7 @@
     "description": "Run your WhatsApp business on autopilot. Connect real WhatsApp numbers, send to thousands of contacts, automate replies with keywords or AI, and keep every number healthy, all from one dashboard.",
     "price": 1999,
     "currency": "INR",
-    "priceDisplayOverride": "Enquire for Price",
+    "priceDisplayOverride": "",
     "buyNowUrl": "",
     "imageAlt": "WhatsApp Automation Platform dashboard screenshot",
     "image": "/assets/images/whatsapp-automation-platform.jpg",
@@ -231,7 +231,7 @@
       },
       {
         "q": "Can I resell it?",
-        "a": "A reseller license system is included. Contact us for terms."
+        "a": "Yes. A reseller license system is available. Contact us for more details."
       },
       {
         "q": "Can I use more than one WhatsApp account?",
