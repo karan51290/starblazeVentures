@@ -4,23 +4,62 @@ title: About | StarBlaze Ventures
 description: StarBlaze Ventures helps small and growing businesses build a real digital presence.
 ---
 {% from "macros/image-placeholder.njk" import imagePlaceholder %}
+{% from "macros/button.njk" import button %}
+{% set enquiryUrl = business.contact.phone | whatsappLink("Hi StarBlaze, I'd like to talk about my business.") %}
 
-<div class="narrow">
-<h1>We're StarBlaze Ventures.</h1>
+<section class="page-hero">
+  <span class="eyebrow">About us</span>
+  <h1>We're StarBlaze Ventures.</h1>
+  <p class="lede">One team for your whole digital presence: the website, the hosting, and the marketing and automation that make it work for the business behind it.</p>
+</section>
 
-<p>StarBlaze Ventures works with small and growing businesses that want a real digital presence — not just a website, but the hosting, marketing, and automation that make that website actually work for the business behind it.</p>
+<section class="split">
+  <div class="split__text">
+    <h2>Why we exist</h2>
+    <p>StarBlaze Ventures works with small and growing businesses that want a real digital presence, not just a website, but the hosting, marketing, and automation that make that website actually work.</p>
+    <p>We started StarBlaze because we kept seeing the same problem: businesses either paid too much for scattered, disconnected services, or did without because "digital" felt overwhelming. So we built a single team that handles the whole stack, giving our clients one point of contact and one team that's accountable for results.</p>
+  </div>
+  <div class="split__media">
+    {{ imagePlaceholder("StarBlaze Ventures team collaborating", "4/3", "/assets/images/about-team.jpg") }}
+  </div>
+</section>
 
-<p>We started StarBlaze because we kept seeing the same problem: businesses either paid too much for scattered, disconnected services, or did without because "digital" felt overwhelming. So we built a single team that handles the whole stack — design, hosting, cloud, GMB, AI automation, WhatsApp marketing, performance marketing, social media, and custom software — so our clients get one point of contact and one team that's actually accountable for results.</p>
+<section class="stat-strip" aria-label="At a glance">
+  <div><strong>{{ services.length }}</strong><span>services under one roof</span></div>
+  <div><strong>1</strong><span>team, one point of contact</span></div>
+  <div><strong>100%</strong><span>fully managed, we keep things running</span></div>
+</section>
 
-<h2>What we believe</h2>
-<ul>
-  <li><strong>Fully managed means fully managed.</strong> We don't hand you a login and walk away — we keep things running.</li>
-  <li><strong>Digital tools should save you time, not cost you more of it.</strong> Every service we offer exists to give business owners their time back.</li>
-  <li><strong>Right-sized, not over-sold.</strong> We recommend what your business needs at its current size, not the most expensive package we have.</li>
-</ul>
+<section class="detail-section">
+  <h2>What we believe</h2>
+  <div class="value-grid">
+    <div class="side-card">
+      <h3>Fully managed means fully managed</h3>
+      <p>We don't hand you a login and walk away. We keep things running.</p>
+    </div>
+    <div class="side-card">
+      <h3>Tools should save you time</h3>
+      <p>Every service we offer exists to give business owners their time back.</p>
+    </div>
+    <div class="side-card">
+      <h3>Right-sized, not over-sold</h3>
+      <p>We recommend what your business needs at its current size, not the most expensive package we have.</p>
+    </div>
+  </div>
+</section>
 
-{{ imagePlaceholder("StarBlaze Ventures team collaborating", "16/9", "https://picsum.photos/seed/sb218/1200/675") }}
+<section class="detail-section">
+  <h2>What we do</h2>
+  <ul class="pill-list">
+    {% for service in services %}<li><a href="/services/{{ service.slug }}/">{{ service.title }}</a></li>{% endfor %}
+  </ul>
+</section>
 
-<p><strong>Address:</strong> {{ business.contact.address.line1 }}, {{ business.contact.address.city }}<br>
-<strong>Phone:</strong> {{ business.contact.phoneDisplay }}</p>
-</div>
+<section class="signature-card signature-card--dark cta-band">
+  <h2>Ready to talk about your business?</h2>
+  <p>Tell us what you need and we'll point you to the right next step.</p>
+  <div class="cta-band__actions">
+    <a class="btn btn--secondary-on-dark btn--pill-outline" href="{{ enquiryUrl }}" target="_blank" rel="noopener">Message us on WhatsApp</a>
+    <a class="btn btn--secondary-on-dark btn--pill-outline" href="/contact/">Contact details</a>
+  </div>
+</section>

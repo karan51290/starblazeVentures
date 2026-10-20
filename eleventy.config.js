@@ -3,6 +3,7 @@ import MarkdownIt from "markdown-it";
 const md = new MarkdownIt({ html: true });
 
 export default function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/js");
   eleventyConfig.addPassthroughCopy("src/assets/css/*.css");
   eleventyConfig.addPassthroughCopy("src/CNAME");

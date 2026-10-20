@@ -4,26 +4,74 @@ title: Contact | StarBlaze Ventures
 description: Get in touch with StarBlaze Ventures — C8/1, Gr. Floor, Sector 4, Eldeco Estate One, Panipat.
 ---
 {% from "macros/image-placeholder.njk" import imagePlaceholder %}
+{% set enquiryUrl = business.contact.phone | whatsappLink("Hi StarBlaze, I'd like to talk about my business.") %}
 
-<div class="narrow">
-<h1>Let's Talk About Your Business</h1>
-<p>Tell us a bit about what you need — we'll get back to you with next steps, no generic sales pitch.</p>
+<section class="page-hero">
+  <span class="eyebrow">Contact us</span>
+  <h1>Let's Talk About Your Business</h1>
+  <p class="lede">Tell us a bit about what you need. We'll get back to you with next steps, no generic sales pitch.</p>
+</section>
 
-<h2>Contact Details</h2>
-<ul>
-  <li><strong>Address:</strong> {{ business.contact.address.line1 }}, {{ business.contact.address.city }}, {{ business.contact.address.state }}</li>
-  <li><strong>Phone:</strong> <a href="tel:{{ business.contact.phone }}">{{ business.contact.phoneDisplay }}</a></li>
-  {% if business.contact.email %}<li><strong>Email:</strong> <a href="mailto:{{ business.contact.email }}">{{ business.contact.email }}</a></li>{% endif %}
-  <li><strong>WhatsApp:</strong> <a href="{{ business.social.whatsapp }}">Message us on WhatsApp</a></li>
-</ul>
+<div class="contact-grid">
+  <div class="contact-grid__main">
+    <div class="contact-methods">
+      <a class="contact-card contact-card--primary" href="{{ enquiryUrl }}" target="_blank" rel="noopener">
+        <span class="contact-card__label">WhatsApp</span>
+        <strong>Message us on WhatsApp</strong>
+        <span>Usually the fastest way to reach us</span>
+      </a>
+      <a class="contact-card" href="tel:{{ business.contact.phone }}">
+        <span class="contact-card__label">Call</span>
+        <strong>{{ business.contact.phoneDisplay }}</strong>
+        <span>Tap to call</span>
+      </a>
+      {% if business.contact.email %}
+      <a class="contact-card" href="mailto:{{ business.contact.email }}">
+        <span class="contact-card__label">Email</span>
+        <strong>{{ business.contact.email }}</strong>
+        <span>We'll reply by email</span>
+      </a>
+      {% endif %}
+      <a class="contact-card" href="{{ business.contact.mapsUrl }}" target="_blank" rel="noopener">
+        <span class="contact-card__label">Visit</span>
+        <strong>{{ business.contact.address.line1 }}, {{ business.contact.address.city }}, {{ business.contact.address.state }}</strong>
+        <span>View on Google Maps</span>
+      </a>
+    </div>
 
-{{ imagePlaceholder("StarBlaze Ventures office", "16/9", "https://picsum.photos/seed/sb219/1200/675") }}
+    <section class="detail-section">
+      <h2>Send us a message</h2>
+      <p>Fill this in and we'll open WhatsApp with your message ready to send.</p>
+      <form class="contact-form" id="contact-form" data-phone="{{ business.contact.phone | whatsappDigits }}">
+        <label>Your name
+          <input type="text" name="name" required autocomplete="name">
+        </label>
+        <label>I'm interested in
+          <select name="topic">
+            <option value="">Not sure yet</option>
+            <optgroup label="Services">
+              {% for service in services %}<option>{{ service.title }}</option>{% endfor %}
+            </optgroup>
+            <optgroup label="Store">
+              {% for product in products %}<option>{{ product.title }}</option>{% endfor %}
+            </optgroup>
+          </select>
+        </label>
+        <label>Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn btn--pill">Send on WhatsApp</button>
+      </form>
+    </section>
+  </div>
 
-<p><a href="{{ business.contact.mapsUrl }}">View our location on Google Maps</a></p>
-
-<h2>Send Us a Message</h2>
-<p>
-  <!-- Placeholder: a real contact form needs a form-handling backend (e.g. Formspree, Netlify Forms equivalent, or a simple serverless function) since this is a static site with no server. Confirm which one before wiring this up. -->
-  A contact form will go here once a form-handling service is chosen — in the meantime, please reach out by phone or WhatsApp above.
-</p>
+  <aside class="contact-grid__side">
+    {{ imagePlaceholder("StarBlaze Ventures office", "4/3", "/assets/images/contact-office.jpg") }}
+    <div class="side-card">
+      <h2>Find us</h2>
+      <p>{{ business.contact.address.line1 }}, {{ business.contact.address.city }}, {{ business.contact.address.state }}</p>
+      <p><a href="{{ business.contact.mapsUrl }}" target="_blank" rel="noopener">Open in Google Maps &rarr;</a></p>
+    </div>
+  </aside>
 </div>
+<script src="/assets/js/contact-form.js" defer></script>

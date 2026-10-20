@@ -4,11 +4,14 @@
     "slug": "example-project-one",
     "title": "Example Project — Website Redesign",
     "excerpt": "Placeholder example entry showing the data shape for a portfolio project. Replace with a real project once available.",
-    "serviceTags": ["website-designing", "gmb-services"],
+    "serviceTags": [
+      "website-designing",
+      "gmb-services"
+    ],
     "clientName": "",
     "projectUrl": "",
     "imageAlt": "Placeholder screenshot of an example client website redesign project",
-    "image": "https://picsum.photos/seed/sb216/800/600",
+    "image": "/assets/images/portfolio-1.jpg",
     "featured": false
   },
   {
@@ -16,11 +19,14 @@
     "slug": "example-project-two",
     "title": "Example Project — WhatsApp Automation Rollout",
     "excerpt": "Placeholder example entry showing the data shape for a portfolio project. Replace with a real project once available.",
-    "serviceTags": ["whatsapp-marketing-automation", "ai-automation"],
+    "serviceTags": [
+      "whatsapp-marketing-automation",
+      "ai-automation"
+    ],
     "clientName": "",
     "projectUrl": "",
     "imageAlt": "Placeholder screenshot of an example WhatsApp automation project",
-    "image": "https://picsum.photos/seed/sb217/800/600",
+    "image": "/assets/images/portfolio-2.jpg",
     "featured": false
   }
 ]
